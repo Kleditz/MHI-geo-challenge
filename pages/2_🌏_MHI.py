@@ -27,12 +27,6 @@ st.markdown(
 )
 
 Map.to_streamlit(height=500)
-
-st.subheader('Value Ranges')
-# image1 = "https://i.imgur.com/FEFinQS.png"
-# st.image(image1)
-st.markdown(
-"""
-![](https://i.imgur.com/FEFinQS.png)
-"""
-)
+# st.subheader('Value Ranges')
+image1 = "https://i.imgur.com/g1mYBtq.png"
+st.image(image1)
