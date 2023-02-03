@@ -2,6 +2,7 @@ from src.mhi import Map
 from src.mhi import mask_mhiVlow, mask_mhilow, mask_mhimod, mask_mhihigh, mask_mhiVhigh, maskedmvi, aoi, pd
 import pandas as pd
 import ee
+import plotly.express as px
 import streamlit as st
 
 tittle1 = "MHI by URGis"
@@ -123,8 +124,9 @@ with col1:
 with col2:
     st.header("Pie Charts Visualization")
 
-    df_plot = pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
-            columns=['Area (m\u00b2)'])
+    df = pd.DataFrame({'mangrove': [round(value1,6), round(value2,6), round(value3,6), round(value4,6), round(value5,6), round(value,6)]},
+                    index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'])
 
-    plot = df_plot.plot.pie(y='Area (m\u00b2)', autopct='%.1f%%', figsize=(6, 6))
-    st.pyplot(plot)
+    fig = px.pie(df, values='mangrove', names=df.index, title='Pixel Representing Mangrove in sqMeter')
+
+    st.plotly_chart(fig)
