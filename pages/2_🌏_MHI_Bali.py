@@ -105,6 +105,7 @@ df = round(value1,6),round(value2,6),round(value3,6),round(value4,6),round(value
 #     "Pixel Representing Mangrove in sqMeter").set_table_styles(
 #     [{'selector': 'caption','props':[('font-weight','bold')]}]))
 
+
 col1, col2 = st.columns(2)
 
 with col1:
@@ -121,6 +122,10 @@ with col1:
 
 with col2:
     st.header("Pie Charts Visualization")
+
+    df_plot = pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
+            columns=['Area (m\u00b2)'])
+
     st.write(
-        "hello sir"
+        df_plot.plot.pie(y='Area (m\u00b2)', autopct='%.1f%%', figsize=(6, 6))
         )
