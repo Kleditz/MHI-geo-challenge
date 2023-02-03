@@ -1,4 +1,4 @@
-from mhi import Map
+from src.mhi import Map
 # import ee
 import streamlit as st
 # import leafmap.foliumap as leafmap

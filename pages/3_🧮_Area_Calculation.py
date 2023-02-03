@@ -1,4 +1,4 @@
-from mhi import mask_mhiVlow, mask_mhilow, mask_mhimod, mask_mhihigh, mask_mhiVhigh, maskedmvi, aoi, pd
+from src.mhi import mask_mhiVlow, mask_mhilow, mask_mhimod, mask_mhihigh, mask_mhiVhigh, maskedmvi, aoi, pd
 import ee
 import numpy as np
 import pandas as pd
