@@ -1,6 +1,8 @@
 import streamlit as st
 
-st.set_page_config(layout="wide")
+tittle1 = "MHI by URGis"
+pageicon1 = ":coffee:"
+st.set_page_config(page_title=tittle1, page_icon=pageicon1, layout="wide", initial_sidebar_state="auto")
 
 # Customize the sidebar
 markdown = """
