@@ -29,4 +29,4 @@ st.markdown(
 Map.to_streamlit(height=600)
 # st.subheader('Value Ranges')
 image1 = "https://i.imgur.com/g1mYBtq.png"
-st.image(image1)
+st.image(image1, width=100)
