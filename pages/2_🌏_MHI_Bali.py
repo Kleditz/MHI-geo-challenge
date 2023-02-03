@@ -30,8 +30,6 @@ st.markdown(
     """
 )
 
-aoi = ee.FeatureCollection('projects/ee-kadekpremaswara/assets/b_mw')
-
 Map.to_streamlit(height=650)
 
 # Legends

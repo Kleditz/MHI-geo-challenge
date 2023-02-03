@@ -20,7 +20,7 @@ ee.Initialize(credentials)
 Map = geemap.Map()
 
 # Import aoi vector
-aoi = ()
+from aoi_bali import aoi
 
 #=================================================================
 
