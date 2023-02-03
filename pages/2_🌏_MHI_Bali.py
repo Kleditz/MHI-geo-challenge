@@ -35,14 +35,6 @@ Map.to_streamlit(height=650)
 # image1 = "https://i.imgur.com/g1mYBtq.png"
 # st.image(image1, width=350)
 
-st.header("MHI Area Calculation")
-
-st.markdown(
-    """
-    This table contains each `MHI classes` Areas in square meter (m\u00b2)
-    """
-)
-
 # CALCULATE AREA
 areaImage = maskedmvi.multiply(ee.Image.pixelArea())
 
@@ -108,7 +100,24 @@ value5 = stats5.get('vhigh mangrove').getInfo()
 
 df = round(value1,6),round(value2,6),round(value3,6),round(value4,6),round(value5,6),round(value,6)
 
-st.write(pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
+# st.write(pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
+#             columns=['Area (m\u00b2)']).style.set_caption(
+#     "Pixel Representing Mangrove in sqMeter").set_table_styles(
+#     [{'selector': 'caption','props':[('font-weight','bold')]}]))
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.header("MHI Area Calculation")
+    st.markdown(
+    """
+    This table contains each `MHI classes` Areas in square meter (m\u00b2)
+    """
+    )
+    st.write(pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
             columns=['Area (m\u00b2)']).style.set_caption(
     "Pixel Representing Mangrove in sqMeter").set_table_styles(
     [{'selector': 'caption','props':[('font-weight','bold')]}]))
+
+with col2:
+    st.header("Pie Charts Visualization")
