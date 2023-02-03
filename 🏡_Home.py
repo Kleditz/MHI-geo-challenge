@@ -3,9 +3,9 @@
 
 import streamlit as st
 
-tittle1 = "MHI by URGis"
-pageicon1 = "🗺️"
-st.set_page_config(page_tittle="MHI by URGis", page_icon="🗺️", layout="wide", initial_sidebar_state="auto")
+# tittle1 = "MHI by URGis"
+# pageicon1 = "🗺️"
+st.set_page_config(page_tittle="MHI by URGis", page_icon="🗺️", layout="wide")
 
 # Customize the sidebar
 markdown = """
