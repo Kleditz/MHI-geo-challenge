@@ -150,6 +150,11 @@ mask_mhiVhigh = mhiVhigh.updateMask(mhiVhigh).rename('vhigh mangrove')
 # Display MHI
 Map.centerObject(aoi,16)
 Map.addLayer(mhi, mhiVis, 'MHI')
+colors = mhiVis['palette']
+vmin = mhiVis['min']
+vmax = mhiVis['max']
+Map.add_colorbar(mhiVis, width=5.0, height=0.4, 
+                label="Mangrove Health Index", layer_name="MHI")
 Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High', shown=0)
 
 # CALCULATE AREA
