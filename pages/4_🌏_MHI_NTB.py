@@ -22,7 +22,7 @@ st.sidebar.info(markdown)
 logo = "https://i.imgur.com/dIBPfvb.png"
 st.sidebar.image(logo)
 
-st.title("`Mangrove Health Index` - `Bali`")
+st.title("`Mangrove Health Index` - `NTB`")
 
 st.markdown(
     """
