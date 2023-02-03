@@ -148,7 +148,7 @@ mhiVhigh = mhi.gt(80)
 mask_mhiVhigh = mhiVhigh.updateMask(mhiVhigh).rename('vhigh mangrove')
 
 # Display MHI
-Map.centerObject(aoi,16)
+Map.centerObject(aoi,64)
 Map.addLayer(mhi, mhiVis, 'MHI')
 Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High')
 
