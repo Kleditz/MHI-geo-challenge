@@ -6,4 +6,4 @@ Mangrove Health Index. We're plenting to implement this apps for all region in I
 
 # Web Development
 
-You can access the web deployment version of this source code at [here](https://kleditz-mhi-geo-challenge--home-3dt2z0.streamlit.app/)
+You can access the web deployment version of this source code [here](https://kleditz-mhi-geo-challenge--home-3dt2z0.streamlit.app/)
