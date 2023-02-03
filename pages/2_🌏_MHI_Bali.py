@@ -166,7 +166,8 @@ mhiVhigh = mhi.gt(80)
 mask_mhiVhigh = mhiVhigh.updateMask(mhiVhigh).rename('vhigh mangrove')
 
 # Display MHI
-Map.centerObject(aoi,16)
+geom = ee.Geometry.Point([115.192675,-8.729805])
+Map.centerObject(geom,16)
 Map.addLayer(mhi, mhiVis, 'MHI')
 colors = mhiVis['palette']
 vmin = mhiVis['min']
