@@ -83,7 +83,7 @@ stats5 = areaImage5.reduceRegion(
 
 value5 = stats5.get('vhigh mangrove').getInfo()
 
-df = round(value1,2),round(value2,2),round(value3,2),round(value4,2),round(value5,2),round(value,2)
+df = round(value1,6),round(value2,6),round(value3,6),round(value4,6),round(value5,6),round(value,6)
 
 st.markdown(
     """
