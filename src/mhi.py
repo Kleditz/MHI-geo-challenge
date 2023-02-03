@@ -150,7 +150,7 @@ mask_mhiVhigh = mhiVhigh.updateMask(mhiVhigh).rename('vhigh mangrove')
 # Display MHI
 Map.centerObject(aoi,16)
 Map.addLayer(mhi, mhiVis, 'MHI')
-Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High').setShown(0)
+Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High', shown=0)
 
 # CALCULATE AREA
 areaImage = maskedmvi.multiply(ee.Image.pixelArea())
