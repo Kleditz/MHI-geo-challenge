@@ -4,7 +4,7 @@
 import streamlit as st
 
 tittle1 = "MHI by URGis"
-pageicon1 = "<i class="bi bi-cup-hot"></i>"
+pageicon1 = ":coffee:"
 st.set_page_config(page_title=tittle1, page_icon=pageicon1, layout="wide", initial_sidebar_state="auto")
 
 # Customize the sidebar
