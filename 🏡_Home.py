@@ -4,7 +4,7 @@
 import streamlit as st
 
 tittle1 = "MHI by URGis"
-pageicon1 = "https://i.imgur.com/dIBPfvb.png"
+pageicon1 = "🗺️"
 st.set_page_config(page_tittle=tittle1, page_icon=pageicon1, layout="wide", initial_sidebar_state="auto")
 
 # Customize the sidebar
