@@ -1,0 +1,22 @@
+# Library
+python==3.8
+earthengine_api==0.1.339
+ee==0.4
+geemap==0.19.6
+numpy==1.24.1
+pandas==1.5.3
+pygal==3.0.0
+streamlit==1.17.0
+jupyter-server-proxy
+leafmap
+nbserverproxy
+geopandas
+owslib
+# Packages
+ffmpeg
+gifsicle
+build-essential
+python3-dev
+gdal-bin
+libgdal-dev
+streamlit-option-menu
