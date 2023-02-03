@@ -122,8 +122,5 @@ with col1:
 with col2:
     st.header("Pie Charts Visualization")
     st.write(
-        df['Area (m²)'].plot.pie(autopct='%1.1f%%', startangle=90)
-        plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle
-        plt.title('Area Distribution')
-        plt.show()
+        "hello sir"
         )
