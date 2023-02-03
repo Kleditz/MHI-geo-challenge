@@ -126,6 +126,5 @@ with col2:
     df_plot = pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
             columns=['Area (m\u00b2)'])
 
-    st.write(
-        df_plot.plot.pie(y='Area (m\u00b2)', autopct='%.1f%%', figsize=(6, 6))
-        )
+    plot = df_plot.plot.pie(y='Area (m\u00b2)', autopct='%.1f%%', figsize=(6, 6))
+    st.pyplot(plot)
