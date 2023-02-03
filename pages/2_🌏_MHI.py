@@ -26,4 +26,11 @@ st.markdown(
     """
 )
 
-Map.to_streamlit(height=700)
+Map.to_streamlit(height=500)
+
+st.subheader('Legend')
+st.markdown(
+"""
+![](https:i.imgur.com/nqKsEh4.png)
+"""
+)
