@@ -26,7 +26,8 @@ st.markdown(
     """
 )
 
-Map.to_streamlit(height=600)
-# st.subheader('Value Ranges')
+# Legends
 image1 = "https://i.imgur.com/g1mYBtq.png"
 st.image(image1, width=350)
+
+Map.to_streamlit(height=600)
