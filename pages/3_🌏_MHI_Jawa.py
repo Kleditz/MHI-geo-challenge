@@ -22,7 +22,7 @@ st.sidebar.info(markdown)
 logo = "https://i.imgur.com/dIBPfvb.png"
 st.sidebar.image(logo)
 
-st.title("`Mangrove Health Index` - `Bali`")
+st.title("`Mangrove Health Index` - `Jawa`")
 
 st.markdown(
     """
@@ -38,7 +38,7 @@ ee.Initialize(credentials)
 Map = geemap.Map()
 
 # Import aoi vector
-aoi = (ee.FeatureCollection('projects/ee-kadekpremaswara/assets/b_mw'))
+aoi = (ee.FeatureCollection('projects/ee-kadekpremaswara/assets/j_mw'))
 
 #=================================================================
 
