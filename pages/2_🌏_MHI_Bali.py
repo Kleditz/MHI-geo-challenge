@@ -1,5 +1,6 @@
 from src.mhi import Map
-from src.mhi import mask_mhiVlow, mask_mhilow, mask_mhimod, mask_mhihigh, mask_mhiVhigh, maskedmvi, aoi, pd
+from src.aoi_bali import aoi
+from src.mhi import mask_mhiVlow, mask_mhilow, mask_mhimod, mask_mhihigh, mask_mhiVhigh, maskedmvi, pd
 import pandas as pd
 import ee
 import plotly.express as px
