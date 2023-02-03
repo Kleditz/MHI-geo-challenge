@@ -20,7 +20,7 @@ ee.Initialize(credentials)
 Map = geemap.Map()
 
 # Import aoi vector
-aoi = ee.FeatureCollection('projects/ee-kadekpremaswara/assets/b_mw')
+aoi = ()
 
 #=================================================================
 

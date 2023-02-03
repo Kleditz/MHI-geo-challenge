@@ -30,6 +30,8 @@ st.markdown(
     """
 )
 
+aoi = ee.FeatureCollection('projects/ee-kadekpremaswara/assets/b_mw')
+
 Map.to_streamlit(height=650)
 
 # Legends
@@ -127,6 +129,6 @@ with col2:
     df = pd.DataFrame({'mangrove': [round(value1,6), round(value2,6), round(value3,6), round(value4,6), round(value5,6), round(value,6)]},
                     index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'])
 
-    fig = px.pie(df, values='mangrove', names=df.index, title='Pixel Representing Mangrove in sqMeter')
+    fig = px.pie(df, values='mangrove', names=df.index)
 
     st.plotly_chart(fig)
