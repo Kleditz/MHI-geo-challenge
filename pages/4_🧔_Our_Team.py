@@ -11,7 +11,7 @@ Read our paper here: <https://github.com/Kleditz/MHI-geo-challenge>
 Our GitHub Repository: <https://github.com/Kleditz/MHI-geo-challenge>
 """
 
-st.sidebar.title("Tentang")
+st.sidebar.title("More About us")
 st.sidebar.info(markdown)
 logo = "https://i.imgur.com/dIBPfvb.png"
 st.sidebar.image(logo)
