@@ -155,7 +155,12 @@ vmin = mhiVis['min']
 vmax = mhiVis['max']
 Map.add_colorbar(mhiVis, width=5.0, height=0.4, 
                 label="Mangrove Health Index", layer_name="MHI")
-Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High', shown=0)
+Map.addLayer(mask_mhiVlow,{'palette':palette},'Very Low',shown=0)
+Map.addLayer(mask_mhilow,{'palette':palette},'Low',shown=0)
+Map.addLayer(mask_mhimod,{'palette':palette},'Moderate',shown=0)
+Map.addLayer(mask_mhihigh,{'palette':palette},'High',shown=0)
+Map.addLayer(mask_mhiVhigh,{'palette':palette},'Very High',shown=0)
+
 
 # CALCULATE AREA
 areaImage = maskedmvi.multiply(ee.Image.pixelArea())
