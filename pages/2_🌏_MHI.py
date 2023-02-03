@@ -26,8 +26,8 @@ st.markdown(
     """
 )
 
+Map.to_streamlit(height=650)
+
 # Legends
 image1 = "https://i.imgur.com/g1mYBtq.png"
 st.image(image1, width=350)
-
-Map.to_streamlit(height=600)
