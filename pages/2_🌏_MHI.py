@@ -29,5 +29,5 @@ st.markdown(
 Map.to_streamlit(height=500)
 
 st.subheader('Legend')
-image1 = "https:i.imgur.com/nqKsEh4.png"
+image1 = "https://i.imgur.com/FEFinQS.png"
 st.image(image1)
