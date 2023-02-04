@@ -71,7 +71,7 @@ markdown = """
 - User may click `>` button to show the web side-bar, which include MHI Calculation that separated for each Regions.
 - User able to read the pipeline of our computation process at `Google Earth Pipeline Pages` on the side-bar.
 - To read the resource we used in this project, user may need to select `Resource Pages` on the side-bar.
-- User also able to see our Team, as what `Our Team Pages` on the side-bar contained.
+- User also able to see our Team, at `Our Team Pages` section on the side-bar.
 - To see our sourcecode for this web-apps, you can visit our `GitHub Repository` at [here](https://github.com/Kleditz/MHI-geo-challenge).
 
 `Current Version : v1.0.0`
