@@ -12,7 +12,7 @@ You can access the web deployment version of this source code [here](https://mhi
 
 | Name | GitHub | LinkedIn |
 | ------------- | ------------- | ------------- |
-| `Developer Team` Aditya Premaswara  | [GitHub](https://github.com/kleditz)  | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)  |
+| `Developer Team`| `Project Manager` Aditya Premaswara  | [GitHub](https://github.com/kleditz)  | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)  |
 | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  |
