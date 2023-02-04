@@ -7,3 +7,12 @@ Mangrove Health Index. We're plenting to implement this apps for all region in I
 # Web Development
 
 You can access the web deployment version of this source code [here](https://mhi-urgis.streamlit.app/)
+
+# Project Team
+
+| Name | GitHub | LinkedIn |
+| ------------- | ------------- | ------------- |
+| `Developer Team` Aditya Premaswara  | [GitHub](https://github.com/kleditz)  | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)  |
+| Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  | Content Cell  |
