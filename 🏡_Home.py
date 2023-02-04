@@ -42,6 +42,7 @@ st.markdown(
     - `Moderate` (from 40 to 60),
     - `High` (from 60 to 80), and
     - `Very High` (from 80 to 100).
+    Currently the data that we used in this WebApps is from `January 2020 to December 2020`
 
     We plan to expand further for all regions of Indonesia, currently the list of available areas can be seen by expanding the sidebar of this website. 
     By doing this, we believe we can help answer the `Blue Carbon` issue that was raised at the G20 International event earlier. 
