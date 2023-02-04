@@ -274,8 +274,8 @@ with col1:
 with col2:
     st.header("Pie Charts Visualization")
 
-    df = pd.DataFrame({'mangrove': [round(value1,6), round(value2,6), round(value3,6), round(value4,6), round(value5,6), round(value,6)]},
-                    index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'])
+    df = pd.DataFrame({'mangrove': [round(value1,6), round(value2,6), round(value3,6), round(value4,6), round(value5,6)]},
+                    index =['Very Low','Low', 'Moderate', 'High', 'Very High'])
 
     fig = px.pie(df, values='mangrove', names=df.index)
 
