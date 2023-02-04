@@ -7,29 +7,44 @@ import plotly.express as px
 import streamlit as st
 
 tittle1 = "MHI by URGis"
-pageicon1 = ":coffee:"
-st.set_page_config(page_title=tittle1, page_icon=pageicon1, layout="wide")
+logo = "https://i.imgur.com/dIBPfvb.png"
+st.set_page_config(page_title=tittle1, page_icon=logo, layout="wide")
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style/style2.css")
 
 # Customize the sidebar
 markdown = """
-Read our paper here: <https://github.com/Kleditz/MHI-geo-challenge>
-
 Our GitHub Repository: <https://github.com/Kleditz/MHI-geo-challenge>
 """
 
-st.sidebar.title("More About us")
+markdown2 = """
+Visit our Faculty official website at https://fkp.unud.ac.id/
+"""
+
+st.sidebar.title("About")
 st.sidebar.info(markdown)
-logo = "https://i.imgur.com/dIBPfvb.png"
-st.sidebar.image(logo)
+logo2 = "https://i.imgur.com/mtK4ADo.png"
+st.sidebar.image(logo2, use_column_width=True)
+# logo_unud = "https://i.imgur.com/NwIZgTX.png"
+# st.sidebar.image(logo_unud, width=250)
+# st.sidebar.header("Faculty of Marine Affairs and Fisheries")
+# st.sidebar.info(markdown2)
 
 st.title("`Mangrove Health Index` - `Bali`")
 
 st.markdown(
     """
-    Aplikasi ini dibuat menggunakan Google Earth Engine API dan data citra **LANDSAT/LC08/C01/T1_SR**, selain itu anda juga dapat melihat luas area 
-    setiap kelas MHI pada bagian bawah. Untuk mengetahui threshold dari setiap level MHI, cukup aktifkan layer pada layout Map yang ditampilkan.
+    This application was created using the Python Programming Language, Google Earth Engine API, 
+    and **LANDSAT/LC08/C01/T1_SR** image data, besides that you can also see the area of each MHI class at the bottom. 
+    To find out the threshold for each MHI level, 
+    simply activate the layer in the displayed Map layout.
     """
 )
+
 
 service_account = "hehehe@hehehe-375811.iam.gserviceaccount.com" # email addres here/ID
 credentials = ee.ServiceAccountCredentials(service_account, 'hehehe-375811-d734f3320f7d.json')
@@ -266,9 +281,8 @@ with col1:
     This table contains each `MHI classes` Areas in square meter (m\u00b2)
     """
     )
-    st.write(pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
-            columns=['Area (m\u00b2)']).style.set_caption(
-    "Pixel Representing Mangrove in sqMeter").set_table_styles(
+    st.table(pd.DataFrame(df, index =['Very Low','Low', 'Moderate', 'High', 'Very High', 'Total Area'],
+            columns=['Area (m\u00b2)']).style.set_table_styles(
     [{'selector': 'caption','props':[('font-weight','bold')]}]))
 
 with col2:

@@ -4,53 +4,77 @@
 import streamlit as st
 
 tittle1 = "MHI by URGis"
-pageicon1 = ":coffee:"
-st.set_page_config(page_title=tittle1, page_icon=pageicon1, layout="wide", initial_sidebar_state="auto")
+logo = "https://i.imgur.com/dIBPfvb.png"
+st.set_page_config(page_title=tittle1, page_icon=logo, layout="wide")
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style/style2.css")
 
 # Customize the sidebar
 markdown = """
-Read our paper here: <https://github.com/Kleditz/MHI-geo-challenge>
-
 Our GitHub Repository: <https://github.com/Kleditz/MHI-geo-challenge>
 """
 
-st.sidebar.title("Tentang")
-st.sidebar.info(markdown)
-logo = "https://i.imgur.com/dIBPfvb.png"
-st.sidebar.image(logo)
+markdown2 = """
+Visit our Faculty official website at https://fkp.unud.ac.id/
+"""
 
-st.title("Tentang Aplikasi Kami")
+st.sidebar.title("About")
+st.sidebar.info(markdown)
+logo2 = "https://i.imgur.com/mtK4ADo.png"
+st.sidebar.image(logo2, use_column_width=True)
+# logo_unud = "https://i.imgur.com/NwIZgTX.png"
+# st.sidebar.image(logo_unud, width=250)
+# st.sidebar.header("Faculty of Marine Affairs and Fisheries")
+# st.sidebar.info(markdown2)
+
+st.title("Projects Overview")
 
 st.markdown(
     """
-    Aplikasi ini kami buat untuk menjawab isu global terkait **`Blue Carbon`**.
+    MHI by URGis Udayana Web-based Application was developed by Udayana University students to help people see the visualization of Mangrove Health Index and the
+    area calculation for each of MHI classes that has been classified into:
+    - `Very Low` (from 0 to 20),
+    - `Low` (from 20 to 40),
+    - `Moderate` (from 40 to 60),
+    - `High` (from 60 to 80), and
+    - `Very High` (from 80 to 100).
+
+    We plan to expand further for all regions of Indonesia, currently the list of available areas can be seen by expanding the sidebar of this website. 
+    By doing this, we believe we can help answer the `Blue Carbon` issue that was raised at the G20 International event earlier. 
+    This also make things easier for Researchers to be able get the information about Mangrove Health Index without learning about JavaScript to use 
+    Google Earth Engine platform or Python Programming Language to perform MHI Calculation.
     """
 )
 
-st.header("Overview Pipeline pada Aplikasi kami:")
+# st.header("Background of this projects")
 
-#Ubah aja jadi perpoint issue yang ada dan jawaban kita gimana terhadap itu
+# #Ubah aja jadi perpoint issue yang ada dan jawaban kita gimana terhadap itu
+# markdown = """
+# - Blue Carbon was one of ...
+# - Mangrove was one of ... plants
+# - The application of remote sensing technology make ...
+# - Google Earth Engine to help ...
+# - The useful automation function of Programing Language help us automaticly ...
+# - Google Earth Engine API to help developer ...
+# - Web development to get interactive UI/UX for monitoring ...
+# """
+
+# st.markdown(markdown)
+
+st.header("How to Operate Our Website")
+
 markdown = """
-1. API Google Earth Engine yang digunakan untuk membantu proses komputasi dari data satelit suatu daerah menjadi ...
-2. Framework Streamlit yang digunakan untuk deployment project kami dalam bentuk website ...
-3. Penggunaan bahasa pemrograman Python yang tergolong open-source dan memiliki banyak community, sehingga digunakan dalam pengembangan aplikasi ini.
-4. Mas Aan dan Tera pencinta GIS
-5. Ilham yang ngasih ide streamlit
-6. Manan yang suka buat paper
-7. Adit anak bawang yang ikut aja
-"""
+- User may click `>` button to show the web side-bar, which include MHI Calculation that separated for each Regions.
+- User able to read the pipeline of our computation process at `Google Earth Pipeline Pages` on the side-bar.
+- To read the resource we used in this project, user may need to select `Resource Pages` on the side-bar.
+- User also able to see our Team, as what `Our Team Pages` on the side-bar contained.
+- To see the our code for this web-apps, you can visit our `GitHub Repository` at [here](https://github.com/Kleditz/MHI-geo-challenge).
 
-st.markdown(markdown)
-
-st.header("Tutorial menggunakan Aplikasi kami:")
-
-markdown = """
-1. Untuk memahami overview lebih detail dari project ini, user dapat mengakses [paper official kami disini](https://github.com/Kleditz/MHI-geo-challenge).
-2. Untuk memulai silahkan klik `>` untuk menampilkan side-bar aplikasi ini.
-3. Untuk membaca Pipeline/Proses pada Google Earth Engine dapat memilih `Google Earth Pipeline` pada side-bar.
-4. Untuk menggunakan fitur `MHI` kami, dapat memilih `MHI` pada side-bar.
-5. Untuk mengetahui luas area pada setiap kelas `MHI`, dapat memilih `Luas` pada side-bar.
-6. Terakhir, untuk melihat halaman manusia tanpa tanda jasa cek `Our Team`.
+`Current Version : v1.0.0`
 """
 
 st.markdown(markdown)
