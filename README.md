@@ -14,5 +14,3 @@ You can access the web deployment version of this source code [here](https://mhi
 | ------------- | ------------- | ------------- |
 | `Developer Team` Aditya Premaswara  | [GitHub](https://github.com/kleditz)  | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)  |
 | `Developer Team` Rinaldy Terra  | [GitHub](https://github.com/rtp07)  | [LinkedIn](https://www.linkedin.com/in/rinaldyterra-16)  |
-| `Developer Team` Ilham Habibullah  | [GitHub](https://github.com/IlhamHabibullah)  | - |
-| `Developer Team` Abdul Manan  | [GitHub](https://github.com/abdmanan30)  | [LinkedIn](https://www.linkedin.com/in/abdmanan30)  |
