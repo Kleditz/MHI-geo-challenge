@@ -30,23 +30,25 @@ st.sidebar.image(logo2, use_column_width=True)
 
 st.title("Meet our team!")
 
-st.markdown(
-    """
-    In order to accomplish the goals of this project, we're currently Final Year Student at Marine Science Udayana University,
-    in the frame there is also Dr. Abd. Rahman As-syakur, S.P., M.Si. as our supervisor at URGis Udayana.
-    """
-)
+# st.markdown(
+#     """
+#     In order to accomplish the goals of this project, we're currently Final Year Student at Marine Science Udayana University,
+#     in the frame there is also Dr. Abd. Rahman As-syakur, S.P., M.Si. as our supervisor at URGis Udayana.
+#     """
+# )
 
-foto_tim = 'https://i.imgur.com/u7XtVpN.jpg'
-st.image(foto_tim)
+# foto_tim = 'https://i.imgur.com/u7XtVpN.jpg'
+# st.image(foto_tim)
 
 markdown = """
-Inframe :
-- `Developer Team` Abdul Manan | [GitHub](https://github.com/abdmanan30) | [LinkedIn](https://www.linkedin.com/in/abdulmanan30)
-- `Developer Team` Kadek Aditya Premaswara | [GitHub](https://github.com/kleditz) | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)
+Our Team :
 - `Developer Team` Rinaldy Terra | [GitHub](https://github.com/rtp07) | [LinkedIn](https://www.linkedin.com/in/rinaldyterra-16)
-- `Developer Team` Ilham Habibullah | [GitHub](https://github.com/IlhamHabibullah)
+- `Developer Team` Kadek Aditya Premaswara | [GitHub](https://github.com/kleditz) | [LinkedIn](https://www.linkedin.com/in/kadek-aditya-premaswara)
+- `Researcher Team` Abdul Manan | [GitHub](https://github.com/abdmanan30) | [LinkedIn](https://www.linkedin.com/in/abdulmanan30)
 - `URGis Supervisor` Abd. Rahman As-syakur | assyakur@unud.ac.id 
+
+There is also our `new member`,
+- `Developer Team` I Putu Ryan Adnyana | [LinkedIn](https://www.linkedin.com/in/i-putu-ryan-adnyana-96521a23b)
 """
 
 st.markdown(markdown)
