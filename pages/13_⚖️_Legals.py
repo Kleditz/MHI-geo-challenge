@@ -40,7 +40,7 @@ st.title("Intellectual Property Rights")
 # foto_tim = 'https://i.imgur.com/u7XtVpN.jpg'
 # st.image(foto_tim)
 
-letter = "https://imgur.com/rVF2pYM"
+letter = "https://i.imgur.com/rVF2pYM.png"
 st.image(letter)
 
 # markdown = """
