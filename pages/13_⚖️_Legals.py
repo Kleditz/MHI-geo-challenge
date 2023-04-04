@@ -41,8 +41,7 @@ st.title("Intellectual Property Rights")
 # st.image(foto_tim)
 
 letter = "https://drive.google.com/file/d/1BFI6SO6XXeqkavUiNU3y6dzhxDu8EXyS/view?usp=share_link"
-# Use the 'embed' HTML tag to display the PDF file
-st.markdown(f'<embed src="{letter}" width="700" height="1000"></embed>', unsafe_allow_html=True)
+st.image(letter)
 
 # markdown = """
 # Our Team :
